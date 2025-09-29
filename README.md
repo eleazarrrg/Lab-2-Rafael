@@ -195,5 +195,5 @@ Puedes añadir más imágenes si deseas mostrar diferentes pantallas.
 ---
 
 <p align="center">
-  Hecho con ❤️ por Rafael — Laravel + Gleismar, mi esposa
+  Hecho con ❤️ por Rafael 💗 Gleismar, mi esposa 💗
 </p>
