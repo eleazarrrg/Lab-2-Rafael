@@ -133,11 +133,38 @@ Puedes añadir más imágenes si deseas mostrar diferentes pantallas.
 
 ## 🚧 Dificultades y Soluciones
 
-| Dificultad | Solución |
-|------------|----------|
-| Error en la conexión a la base de datos (.env) | Se revisaron credenciales y se ejecutó `php artisan config:clear`. |
-| Conflictos al compilar assets con Vite | Se reinstalaron dependencias con `npm install`. |
-| Migraciones fallidas | Se ejecutó `php artisan migrate:fresh` para regenerar las tablas. |
+**Dificultad 1 – Tablas creadas con MyISAM en lugar de InnoDB**  
+- *Problema:* Las migraciones generaban tablas con motor MyISAM, impidiendo usar claves foráneas.  
+- *Causa:* El motor por defecto en MySQL/MariaDB estaba configurado como MyISAM.  
+- *Solución:* Cambié el motor a InnoDB desde phpMyAdmin, eliminé la base de datos y volví a ejecutar `php artisan migrate`.
+
+**Dificultad 2 – Node / npm / npx no reconocidos aun usando nvm-windows**  
+- *Problema:* Los comandos `node -v`, `npm -v`, `npx -v` no funcionaban en PowerShell.  
+- *Causa:* Enlaces simbólicos (NVM_SYMLINK) y variables de entorno PATH mal configuradas.  
+- *Solución:* Reinstalé y activé la versión con `nvm install` y `nvm use`, ajusté el PATH y eliminé instalaciones antiguas de Node.
+
+**Dificultad 3 – Políticas de PowerShell bloqueando scripts .ps1 de npm/npx**  
+- *Problema:* Al ejecutar `npm install` o `npm run dev`, aparecía el error “npm.ps1 no se puede cargar…”.  
+- *Causa:* La política de PowerShell impedía la ejecución de scripts sin firma.  
+- *Solución:* Ejecuté PowerShell como administrador y cambié la política con:  
+  ```powershell
+  Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+  ```
+
+---
+
+## ✨ Aprendizajes
+
+- **Comprender la infraestructura subyacente**  
+  Aprendí que Laravel depende de la configuración de base de datos, sistema operativo y extensiones. Un simple detalle, como que MySQL use MyISAM, puede bloquear migraciones.
+
+- **Dominio de entornos y versiones**  
+  El uso de nvm-windows demostró la importancia de gestionar versiones de Node.js y documentar rutas y dependencias para mantener estabilidad y portabilidad.
+
+- **Seguridad y políticas del sistema**  
+  Ajustar las Execution Policies de PowerShell mostró cómo equilibrar seguridad y productividad en el desarrollo.
+
+> En conjunto, estas experiencias me dieron mayor confianza para montar y cuidar proyectos desde cero, resolviendo problemas de infraestructura y no solo de código.
 
 ---
 
