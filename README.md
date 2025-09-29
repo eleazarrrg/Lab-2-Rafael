@@ -145,14 +145,14 @@ Puedes añadir más imágenes si deseas mostrar diferentes pantallas.
 
 1. [Documentación oficial de Laravel](https://laravel.com/docs)
 2. [Guía de Autenticación Laravel UI](https://laravel.com/docs/8.x/authentication)
-3. [Documentación de Composer](https://getcomposer.org/doc/)
+3. [Video de Profesora Irina](https://www.youtube.com/watch?v=GZMGyYNq3hE)
 
 ---
 
 ## 📅 Fecha de ejecución
 
 - **Inicio del laboratorio:** 22 de septiembre de 2025  
-- **Finalización:** *(agrega la fecha exacta de culminación)*
+- **Finalización:** *Aún en proceso, seguiremos trabajando!*
 
 ---
 
