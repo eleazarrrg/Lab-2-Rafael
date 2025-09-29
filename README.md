@@ -98,10 +98,10 @@ Antes de iniciar, asegúrate de tener instalado:
 ## 👨‍💻 Autor
 
 - **Rafael Gómez**  
-  Estudiante de Ingeniería de Software, Universidad Tecnológica de Panamá
+  Estudiante de 21 años. Ingeniería de Software, Universidad Tecnológica de Panamá
 
 ---
 
 <p align="center">
-  Hecho con ❤️ por Rafael — Laravel + Vite
+  Hecho con ❤️ por Rafael — Laravel
 </p>
