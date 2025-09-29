@@ -4,7 +4,7 @@
   <img src="https://www.xtrafondos.com/wallpapers/personajes-de-anime-one-piece-13167.jpg" alt="Banner One Piece" width="900">
 </p>
 
-Este repositorio contiene el proyecto **Laravel** desarrollado como parte del **Laboratorio 2** de la asignatura *Sistemas Operativos / Ingeniería de Software*.
+Este repositorio contiene el proyecto **Laravel** desarrollado como parte del **Laboratorio 2** de la asignatura *Ingenieria Web / Ingeniería de Software*. Yo soy Rafael Gómez, estudiante de 3er año, espero te guste!
 
 <p align="center">
   <img src="https://utp.ac.pa/sites/default/files/documentos/2023/imagen/logo_utp-rgb_2022.png" alt="Logo Universidad Tecnológica de Panamá" height="90">
